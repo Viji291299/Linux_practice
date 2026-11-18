@@ -1,0 +1,12 @@
+#Linuxops scheduled jobs 
+
+#minute hour days 1-31 month 1-12 days1-7
+
+
+*/5 * * * * /home/viji/devops/linuxops/scripts/health_check.sh >> /home/viji/devops/linuxops/logs/cron_health.txt 2>&1
+
+*/15 * * * * /home/viji/devops/linuxops/scripts/disk_monitor.sh >> /home/viji/devops/linuxops/logs/cron_disk.txt 2>&1
+
+0 2 * * * /home/viji/devops/linuxops/scripts/log_Cleanup.sh >> /home/viji/devops/linuxops/logs/disk_cron.txt 2>&1
+
+

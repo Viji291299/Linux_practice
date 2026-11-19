@@ -38,8 +38,6 @@ else
  
 fi 
 
-GROUP="${2:-}"
 
-if getent group "$USERNAME"
 
 	

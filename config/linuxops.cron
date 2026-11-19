@@ -9,4 +9,6 @@
 
 0 2 * * * /home/viji/devops/linuxops/scripts/log_Cleanup.sh >> /home/viji/devops/linuxops/logs/disk_cron.txt 2>&1
 
+0 1 * * * /home/viji/devops/linuxops/scripts/backup.sh >> /home/viji/devops/linuxops/logs/cron_backup.txt 2>&1
+
 
